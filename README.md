@@ -23,7 +23,7 @@
 
 Базовый синтаксис:
 ```bash
-python script.py <pdf_path> [--output output.json] [--lang en]
+python text_from_pdf.py <pdf_path> [--output output.json] [--lang en]
 ```
 
 Параметры:
@@ -35,17 +35,17 @@ python script.py <pdf_path> [--output output.json] [--lang en]
 
 1. Базовое использование:
 ```bash
-python script.py document.pdf
+python text_from_pdf.py document.pdf
 ```
 
 2. С указанием выходного файла и русского языка:
 ```bash
-python script.py document.pdf --output russian_text.json --lang ru
+python text_from_pdf.py document.pdf --output russian_text.json --lang ru
 ```
 
 3. Распознавание многоязычного текста (несколько языков через +):
 ```bash
-python script.py multi_lang.pdf --lang en+ru+fr
+python text_from_pdf.py multi_lang.pdf --lang en+ru+fr
 ```
 
 ## Формат вывода
