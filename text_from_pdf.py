@@ -28,7 +28,7 @@ def get_text_from_pdf(pdf_path: str, output_json: str, lang: str = 'en'):
     total_pages = len(images)
 
     try:
-        reader = easyocr.Reader(lang_list=[lang])
+        reader = easyocr.Reader(lang_list=lang.split('+'))
     except Exception as e:
         print(f'Ошибка инициализации EasyOCR: {e}')
         sys.exit(1)
